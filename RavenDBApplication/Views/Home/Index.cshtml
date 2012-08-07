@@ -1,0 +1,12 @@
+﻿@model IEnumerable<RavenDBApplication.Models.Product>
+
+@{
+    ViewBag.Title = "Home";
+}
+
+<h2>Home</h2>
+
+@foreach(var product in Model)
+{
+    <p>@Html.DisplayFor(x => product)</p>
+}

@@ -1,0 +1,13 @@
+﻿@model RavenDBApplication.Models.Product
+
+@{
+    ViewBag.Title = "Product";
+}
+
+<h2>Product</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.EditorFor(x => Model)
+    <input type="submit"/>
+}
